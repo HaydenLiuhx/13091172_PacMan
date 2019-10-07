@@ -13,6 +13,7 @@ public class dot : MonoBehaviour
     {
         if (collision.gameObject.name == "Pacm")
         {
+            collision.gameObject.GetComponent<Pacman>().curnum += 1;
             Destroy(gameObject);
         }
         
